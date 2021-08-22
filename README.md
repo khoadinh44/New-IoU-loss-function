@@ -18,10 +18,14 @@ Pretrain: https://drive.google.com/drive/folders/1dQ0DGvjEPUU5oBun9ZpmnV_sgPfdnS
 # Test data with each weight:
 1. model_CD_IoU_s_5.h5:
   Start testing period-------------------------------------------------
-  - Change best_weights = model_CD_IoU_s_5.h5(following the weight's name) and version = 's' in YOLOv5/utils/config.py file
+  - Change **best_weights = model_CD_IoU_s_5.h**(following the weight's name) and **version = 's'** in YOLOv5/utils/config.py file
   - Run test.py
   - Run main.py in Yolov5_voc/mAP-master/main.py
  
  End training period---------------------------------------------------
-  - Change the old folder detection-results and ground-truth to detection-results-model_CD_IoU_s_5 and ground-truth-model_CD_IoU_s_5(following the weight's name)
-  - Create another detection-results and ground-truth in Yolov5_voc\mAP-master\input
+   + Yolov5_voc\mAP-master\input\
+        - Change the old folder (**detection-results** and **ground-truth**) to the new folder(**detection-results-model_CD_IoU_s_5** and **ground-truth-model_CD_IoU_s_5**)(following the weight's name)
+        - Create the new **detection-results** and **ground-truth**
+   + Yolov5_voc\mAP-master\
+        - Change the old folder (**output**) to the new folder(**output-model_CD_IoU_s_5**)(following the weight's name)
+        - Create the new **output** folder
