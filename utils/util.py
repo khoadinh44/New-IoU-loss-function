@@ -6,7 +6,8 @@ import cv2
 import numpy as np
 from six import raise_from
 from import_file import import_file
-config = import_file('E:/Yolov5_voc/utils/config.py')
+# config = import_file('E:/Yolov5_voc/utils/config.py')
+from utils import config
 
 def find_node(parent, name, debug_name=None, parse=None):
     if debug_name is None:
