@@ -5,7 +5,9 @@ from tensorflow import nn
 from tensorflow.keras import layers
 from tensorflow.keras import models
 from import_file import import_file
-config = import_file('E:/Yolov5_voc/utils/config.py')
+
+# config = import_file('E:/Yolov5_voc/utils/config.py')
+from utils import config
 
 initializer = tf.random_normal_initializer(stddev=0.01)
 l2 = tf.keras.regularizers.L1L2(
