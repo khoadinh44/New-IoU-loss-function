@@ -3,8 +3,10 @@ import tensorflow as tf
 from tensorflow.keras.utils import OrderedEnqueuer
 from tensorflow.keras.utils import Sequence
 from import_file import import_file
-config = import_file('E:/Yolov5_voc/utils/config.py')
-util = import_file('E:/Yolov5_voc/utils/util.py')
+# config = import_file('E:/Yolov5_voc/utils/config.py')
+# util = import_file('E:/Yolov5_voc/utils/util.py')
+from utils import config
+from nets import nn
 
 class Generator(Sequence):
     def __init__(self, f_names):
