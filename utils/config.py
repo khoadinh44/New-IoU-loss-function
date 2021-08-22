@@ -4,7 +4,7 @@ import numpy as np
 epochs = 5
 batch_size = 16
 image_size = 640
-base_dir = 'E:/Yolov5_voc/data/'
+base_dir = 'Yolov5_voc/data/'
 image_dir = 'all_images/'
 label_dir = 'all_labels/'
 threshold = 0.4
@@ -60,7 +60,7 @@ anchors = np.array([[ 15.,  22.],
                      [277., 155.],
                      [376., 327.]], np.float32)
                          
-weights_path = 'E:/Yolov5_voc/weights/'
+weights_path = 'Yolov5_voc/weights/'
 best_weights = 'model_s.h5'
 
 width = [0.50, 0.75, 1.0, 1.25]
