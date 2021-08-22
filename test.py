@@ -10,17 +10,21 @@ from import_file import import_file
 import matplotlib
 import matplotlib.pyplot as plt
 
-confusionMatrix = import_file('E:/Yolov5_voc/ConfusionMatrix.py')
-config = import_file('E:/Yolov5_voc/utils/config.py')
-nn = import_file('E:/Yolov5_voc/nets/nn.py')
-util = import_file('E:/Yolov5_voc/utils/util.py')
+import ConfusionMatrix
+from utils import config
+from nets import nn
+from utils import util
+# confusionMatrix = import_file('E:/Yolov5_voc/ConfusionMatrix.py')
+# config = import_file('E:/Yolov5_voc/utils/config.py')
+# nn = import_file('E:/Yolov5_voc/nets/nn.py')
+# util = import_file('E:/Yolov5_voc/utils/util.py')
 matplotlib.use("Agg")
 
 def test():
     graphic = confusionMatrix.ConfusionMatrix(42, conf=0.7, iou_thres=0.7)
     def draw_bbox(image, boxes, labels, scores, true_boxes, true_labels, file_name):
         detection = []
-        txt = open('E:/Yolov5_voc/mAP-master/input/detection-results/{}.txt'.format(file_name), 'w')
+        txt = open('Yolov5_voc/mAP-master/input/detection-results/{}.txt'.format(file_name), 'w')
         for i, box in enumerate(boxes):
             coordinate = np.array(box[:4], dtype=np.int32)
             c1, c2 = (coordinate[0], coordinate[1]), (coordinate[2], coordinate[3])
@@ -30,7 +34,7 @@ def test():
             detection.append([c1[0], c1[1], c2[0], c2[1], scores[i], labels[i]])
 
             # write txt true
-            txt_true = open('E:/Yolov5_voc/mAP-master/input/ground-truth/{}.txt'.format(file_name), 'w')
+            txt_true = open('Yolov5_voc/mAP-master/input/ground-truth/{}.txt'.format(file_name), 'w')
             for idx, true_box in enumerate(true_boxes):
                 txt_true.write(f'{true_labels[idx]} {true_box[0]} {true_box[1]} {true_box[2]} {true_box[3]}\n')
             txt_true.close()
