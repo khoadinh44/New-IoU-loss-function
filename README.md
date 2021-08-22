@@ -13,10 +13,9 @@ Pretrain: https://drive.google.com/drive/folders/1dQ0DGvjEPUU5oBun9ZpmnV_sgPfdnS
                       |__all_images
                       |__all_labels
                       |__val.txt
-3. Download the pretrain files and put it into the weights folder
+2. Download the pretrain files and put it into the ***weights*** folder
 
 # Test data with each weight:
-1. model_CD_IoU_s_5.h5:
   Start testing period-------------------------------------------------
   - Change **best_weights = model_CD_IoU_s_5.h**(following the weight's name) and **version = 's'** in YOLOv5/utils/config.py file
   - Run test.py
