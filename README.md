@@ -23,9 +23,9 @@ Pretrain: https://drive.google.com/drive/folders/1dQ0DGvjEPUU5oBun9ZpmnV_sgPfdnS
   - Run main.py in Yolov5_voc/mAP-master/main.py
  
  End training period---------------------------------------------------
-   + Yolov5_voc\mAP-master\input\
+   + Yolov5_voc/mAP-master/input/
         - Change the old folder (**detection-results** and **ground-truth**) to the new folder(**detection-results-model_CD_IoU_s_5** and **ground-truth-model_CD_IoU_s_5**)(following the weight's name)
         - Create the new **detection-results** and **ground-truth**
-   + Yolov5_voc\mAP-master\
+   + Yolov5_voc/mAP-master/
         - Change the old folder (**output**) to the new folder(**output-model_CD_IoU_s_5**)(following the weight's name)
         - Create the new **output** folder
