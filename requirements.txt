@@ -6,3 +6,5 @@ torch
 os
 sys
 keras
+pkg_resources
+pandas
