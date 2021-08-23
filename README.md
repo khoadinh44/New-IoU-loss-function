@@ -7,7 +7,7 @@ Pretrain: https://drive.google.com/drive/folders/1dQ0DGvjEPUU5oBun9ZpmnV_sgPfdnS
 
 
 # Preparing for the test:
-1. Download data and put it to the data folder, following the path:
+1. Download data and put it into the data folder, following the path:
       # Parent folder
           |__Yolov5_voc
                  |__data
