@@ -15,3 +15,5 @@ operator
 sys
 argparse
 math
+six
+opencv-python
