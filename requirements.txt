@@ -1,0 +1,6 @@
+tensorflow
+numpy 
+import_file
+matplotlib
+torch
+
