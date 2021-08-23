@@ -3,8 +3,8 @@
 # Download data and pretraining:
 Data:
 
-<!--       **all_images**: wget --no-check-certificate 'https://drive.google.com/file/d/1MTNHgSOEXQdFRw9TzzQ9vOqgYWeSz_KG/view?usp=sharing' -O  all_images.zip -->
-<!--       **all_labels**: wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VYZxjKuJeDYvpaVAC_CJb_jnoPFe4r6p' -O  all_labels.zip -->
+      all_images: wget --no-check-certificate 'https://drive.google.com/file/d/1MTNHgSOEXQdFRw9TzzQ9vOqgYWeSz_KG/view?usp=sharing' -O  all_images.zip                               
+      all_labels: wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1VYZxjKuJeDYvpaVAC_CJb_jnoPFe4r6p' -O  all_labels.zip 
 
 Pretrain: https://drive.google.com/drive/folders/1dQ0DGvjEPUU5oBun9ZpmnV_sgPfdnSHf?usp=sharing
 
