@@ -21,7 +21,7 @@ from utils import util
 matplotlib.use("Agg")
 
 def test():
-    graphic = confusionMatrix.ConfusionMatrix(42, conf=0.7, iou_thres=0.7)
+    graphic = ConfusionMatrix.ConfusionMatrix(42, conf=0.7, iou_thres=0.7)
     def draw_bbox(image, boxes, labels, scores, true_boxes, true_labels, file_name):
         detection = []
         txt = open('Yolov5_voc/mAP-master/input/detection-results/{}.txt'.format(file_name), 'w')
